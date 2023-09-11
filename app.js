@@ -15,9 +15,11 @@ window.location.href = `index_${selectedLanguage}.html`;
 
 function switchToRomanian() {
     window.location.href = 'index_ro.html';
+    alert("switch");
 }
 
 function switchToRussian() {
     window.location.href = 'index_ru.html';
+    alert("switch")
 }
 
