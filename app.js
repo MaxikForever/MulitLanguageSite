@@ -11,6 +11,20 @@ if (!supportedLanguages.includes(selectedLanguage)) {
 }
 
 
+const codeExecuted = sessionStorage.getItem('codeExecuted');
+console.log("a")
+if (!codeExecuted) {
+    // Code to execute only once when the page is initially loaded
+    // ...
+
+    window.location.href = `index_${selectedLanguage}.html`;
+
+    // Set the flag to indicate that code execution has occurred
+    sessionStorage.setItem('codeExecuted', 'true');
+}
+
+
+
 // Check if the current page matches the selected language before redirecting
 
 
